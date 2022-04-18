@@ -8,7 +8,9 @@ import {
   Container,
   Header,
   Title,
-  DeleteLabel
+  DeleteLabel,
+  Upload,
+  PickImageButton
 } from './styles'; 
 
 export function Product(){
@@ -24,7 +26,10 @@ export function Product(){
         </TouchableOpacity>
       </Header>
 
-      <Photo uri="" />
+      <Upload>
+        <Photo uri="" />
+        <PickImageButton title="Carregar" type="secondary" />
+      </Upload>
     </Container>
   )
 }

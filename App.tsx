@@ -6,9 +6,9 @@ import { DMSerifDisplay_400Regular } from '@expo-google-fonts/dm-serif-display';
 import { ThemeProvider } from 'styled-components/native';
 import { AuthProvider } from '@hooks/auth';
 
-import theme from './src/theme';
+import { Routes } from './src/routes';
 
-import { Product } from '@screens/Product';
+import theme from './src/theme';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -25,7 +25,7 @@ export default function App() {
       <StatusBar style="light" translucent backgroundColor="transparent" />
       
       <AuthProvider>
-        <Product />
+        <Routes />
       </AuthProvider>
     </ThemeProvider>
   );
